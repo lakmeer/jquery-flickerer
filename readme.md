@@ -63,3 +63,13 @@ transitions aren't available for your browser.
 
 Probability that the luminance will hit max once in a while. Goes right to 1 even if spread setting limits
 normal output. This creates a candle-like 'sputtering' effect.
+
+
+Future
+------
+
+There's a couple of interesting ways this could evolve, including:
+- Memoizing some number of keyframes to increase performance
+- Abstracting the luminance algorithm into a $.animate compatible easing function
+- More realistic sputtering
+- Probably more stuff
