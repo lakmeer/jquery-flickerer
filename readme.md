@@ -69,6 +69,7 @@ Future
 ------
 
 There's a couple of interesting ways this could evolve, including:
+
 - Memoizing some number of keyframes to increase performance
 - Abstracting the luminance algorithm into a $.animate compatible easing function
 - More realistic sputtering
