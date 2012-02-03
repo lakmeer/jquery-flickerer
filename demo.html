@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Candle flickering</title>
+        <style>
+            html { background: #002; }
+            .candles { width: 200px; margin: 100px auto 0; }
+            .candle  { width: 40px; height: 40px; display: inline-block; margin: 10px; background: #ed0; border-radius: 50%; }
+            .huge    { width: 170px; height: 170px; }
+        </style>
+    </head>
+    <body>
+        <div class="candles">
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle huge"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+            <div class="candle"></div>
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="flicker.js"></script>
+        <script>
+
+            // Some presets
+            var preset = {
+
+                candle : {
+                    flickerRate    : 10,
+                    spread         : 0.3,
+                    spikeFrequency : 0.05
+                },
+
+                fire : {
+                    flickerRate    : 30,
+                    average        : 3,
+                    spread         : 0.5,
+                    offset         : 0.5,
+                    cssSmooth      : false,
+                    spikeFrequency : 0.2
+                },
+
+                firefly : {
+                    flickerRate    : 5,
+                    average        : 3,
+                    spread         : 0.4,
+                    offset         : 0.4,
+                    spikeFrequency : 0.0
+                }
+
+            }
+
+            // Usage
+            $('.candle').flicker( preset.candle );
+
+        </script>
+    </body>
+</html>
