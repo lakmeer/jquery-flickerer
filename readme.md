@@ -3,7 +3,7 @@ Flickerer
 
 Flickerer can flicker your DOM elements as though they were light cast from a flame. True story.
 
-Demo included.
+Demo included, preview [here](http://lakmeer.github.com/jquery-flickerer/demo.html).
 
 
 Hmmm
